@@ -1,0 +1,85 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+      "react"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "no-underscore-dangle": 0,
+      "linebreak-style": 0,
+      "max-len": [
+        "error",
+        {
+          "code": 150
+        }
+      ],
+      "jsx-quotes": [
+        "error",
+        "prefer-single"
+      ],
+      "react/jsx-boolean-value": "error",
+      "react/jsx-curly-spacing": [
+        "error",
+        "never"
+      ],
+      "react/jsx-equals-spacing": [
+        "error",
+        "never"
+      ],
+      "react/jsx-indent": [
+        "error",
+        2
+      ],
+      "react/jsx-indent-props": [
+        "error",
+        2
+      ],
+      "react/jsx-no-duplicate-props": "error",
+      "react/jsx-no-undef": "error",
+      "react/jsx-tag-spacing": [
+        "error",
+        {
+          "beforeSelfClosing": "always"
+        }
+      ],
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      "react/self-closing-comp": "error",
+      "react/jsx-max-props-per-line": [
+        "error",
+        {
+          "when": "multiline"
+        }
+      ],
+      "react/jsx-first-prop-new-line": [
+        "error"
+      ],
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ],
+      "import/prefer-default-export": "off",
+      "no-param-reassign": "off"
+    },
+    "extends": [
+      "airbnb-base",
+      "react-app"
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ],
+          "moduleDirectory": ["node_modules", "src"]
+        }
+      }
+    }
+  }
